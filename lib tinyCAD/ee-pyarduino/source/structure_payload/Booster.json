@@ -1,0 +1,10 @@
+{
+    "DeviceType": "DeviceBooster",
+    "Description": "A external amplifier for eddy current signals.",
+    "Version": 0,
+    "CompatibilityVersion": 0,
+    "Raw":
+        [
+            {"Field": "BoosterDescription", "Type": "char[16]", "Source": "Library", "Description": "Empty value"}
+        ]
+}

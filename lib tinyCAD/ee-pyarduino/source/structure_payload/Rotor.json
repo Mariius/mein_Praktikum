@@ -1,0 +1,22 @@
+{
+    "DeviceType": "DeviceRotor",
+    "Description": "A external rotor for eddy current signals.",
+    "Version": 0,
+    "CompatibilityVersion": 0,
+    "Raw":
+        [
+            {"Field": "RotorType", "Type": "char[16]", "Source": "Library", "Description": "E.g. HDR18"},
+            {"Field": "RotorSubType", "Type": "char[16]", "Source": "Library", "Description": "?"},
+            {"Field": "TriggerType", "Type": "eTriggerType", "Source": "Library", "Description": ""},
+            {"Field": "EncoderTypeX", "Type": "eEncoderType", "Source": "Library", "Description": ""},
+            {"Field": "EncoderTypeY", "Type": "eEncoderType", "Source": "Library", "Description": ""},
+            {"Field": "EncoderResolution", "Type": "uint16", "Source": "Library", "Description": "Single resolution increments per rotation"},
+            {"Field": "MotorMaxCurrent", "Type": "uint8", "Source": "Library", "ScalingFactor": 0.01, "Description": "Max Motor Current in units of 10mA"},
+            {"Field": "NomVoltage", "Type": "uint16", "Source": "Library", "ScalingFactor": 0.001, "Description": "Nominal Motor Voltage in mV"},
+            {"Field": "MaxVoltage", "Type": "uint16", "Source": "Library", "ScalingFactor": 0.001, "Description": "Maximum Motor Voltage in mV"},
+            {"Field": "MinVoltage", "Type": "uint16", "Source": "Library", "ScalingFactor": 0.001, "Description": "Minimium Motor Votage in mV"},
+            {"Field": "NomRPM", "Type": "uint16", "Source": "Library", "ScalingFactor": 1, "Description": "Nominal RPB at NomVoltage"},
+            {"Field": "MaxRPM", "Type": "uint16", "Source": "Library", "ScalingFactor": 1, "Description": "Maximum allowable RPM"},
+            {"Field": "MinRPM", "Type": "uint16", "Source": "Library", "ScalingFactor": 1, "Description": "Minimum allowable RPM"}
+        ]
+}

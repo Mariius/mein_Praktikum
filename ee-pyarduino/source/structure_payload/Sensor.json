@@ -1,0 +1,18 @@
+{
+    "DeviceType": "DeviceSensor",
+    "Description": "A absolute or differential eddy current sensor.",
+    "Version": 0,
+    "CompatibilityVersion": 0,
+    "Raw":
+        [
+            {"Field": "ElementType", "Type": "char[16]", "Source": "Library", "Description": "Type of element: E.g. KDA-129"},
+            {"Field": "HousingType", "Type": "char[16]", "Source": "Library", "Description": "Type of housing. E.g. H.1232.23.4"},
+            {"Field": "RecACoilType", "Type": "eCoilType", "Source": "Library", "Description": "Type of coil A"},
+            {"Field": "RecBCoilType", "Type": "eCoilType", "Source": "Library", "Description": "Type of coil A"},
+            {"Field": "DrvMaxCurrent", "Type": "uint16", "Source": "Library",  "ScalingFactor": 0.01, "Description": "Max Driver Amps in units of 10mA"},
+            {"Field": "Frequency", "Type": "decfloat16", "Source": "Library", "ScalingFactor": 1, "Description": "recommended driver frequency in Hz"},
+            {"Field": "FrequencyLow", "Type": "decfloat16", "Source": "Library", "ScalingFactor": 1, "Description": "lowest recommended frequency in Hz"},
+            {"Field": "FrequencyHigh", "Type": "decfloat16", "Source": "Library", "ScalingFactor": 1, "Description": "highest recommended frequency in Hz"},
+            {"Field": "NumArray", "Type": "uint8", "Source": "Library", "Description": "Number of Probes in Array. 0 For single Probes"}
+        ]
+}

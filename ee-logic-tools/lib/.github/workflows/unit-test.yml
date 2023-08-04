@@ -1,0 +1,116 @@
+# This is a basic workflow
+name: Unit-Test
+
+# Controls when the action will run.
+# Triggers the workflow on push, pull request or release events or total manually
+on: [push, pull_request, release, workflow_dispatch]
+
+jobs:
+  # Unit Test
+  Unit-Test-Linux:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out repository under $GITHUB_WORKSPACE, so we job can access it
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      # Run some VM prints
+      - name: Show version information of VM
+        run: |
+            cat /etc/os-release
+            python3 --version
+            pip3 list
+
+      # Run package installation
+      - name: Python Package Installation
+        run: pip3 install -r requirements.txt
+
+      # Run unit test
+      - name: Unit Test
+        run: |
+            pytest .test
+  
+  # Unit Test
+  Unit-Test-Windows:
+    # The type of runner that the job will run on
+    runs-on: windows-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out repository under $GITHUB_WORKSPACE, so we job can access it
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      # Run some VM prints
+      - name: Show version information of VM
+        run: |
+            python --version
+            pip list
+
+      # Run package installation
+      - name: Python Package Installation
+        run: pip install -r requirements.txt
+
+      # Run unit test
+      - name: Unit Test
+        run: |
+            python -m pytest .test
+
+  # Linux test job as a submodule
+  Linux-Submodule-Test:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out repository under $GITHUB_WORKSPACE, so we job can access it
+      - uses: actions/checkout@v3
+        with:
+          path: 'sub/lib'
+
+      # Run some VM prints
+      - name: Show version information of VM
+        run: |
+            cat /etc/os-release
+            python3 --version
+            pip3 list
+
+      # Run package installation
+      - name: Python Package Installation
+        run: pip3 install -r sub/lib/requirements.txt
+
+      # Runs simulation test
+      - name: Test Simulation
+        run: |
+            pytest sub/lib/.test
+        
+  # Widnows test job as a submodule
+  Windows-Submodule-Test:
+    # The type of runner that the job will run on
+    runs-on: windows-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out repository under $GITHUB_WORKSPACE, so we job can access it
+      - uses: actions/checkout@v3
+        with:
+          path: 'sub/lib'
+
+      # Run some VM prints
+      - name: Show version information of VM
+        run: |
+            systeminfo
+            python --version
+            pip list
+
+      # Run package installation
+      - name: Python Package Installation
+        run: pip install -r sub/lib/requirements.txt
+
+      # Run simulation test
+      - name: Test Simulation
+        run: |
+            python -m pytest sub/lib/.test

@@ -1,0 +1,9 @@
+
+
+
+write command received
+Enter the position: 32
+Memory content, separated by spaces:
+0x16 0x12 0x45 0x87 0x78 0x45 0x45 0x45 
+writing menory...
+done

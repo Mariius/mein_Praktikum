@@ -1,0 +1,13 @@
+# Create a folder
+$ mkdir actions-runner && cd actions-runner
+# Download the latest runner package
+$ curl -o actions-runner-linux-arm-2.305.0.tar.gz -L https://github.com/actions/runner/releases/download/v2.305.0/actions-runner-linux-arm-2.305.0.tar.gz
+# Optional: Validate the hash
+$ echo "5b2b53d9739a4821c32068311bb28f54200dc7404e4785578f88280d11488854  actions-runner-linux-arm-2.305.0.tar.gz" | shasum -a 256 -c
+# Extract the installer
+$ tar xzf ./actions-runner-linux-arm-2.305.0.tar.gz
+
+# Create the runner and start the configuration experience
+$ ./config.sh --url https://github.com/rohmanngmbh/ee-pyarduino --token A63IBWR43HMTM5LGQYFM4WLEVUCAS
+# Last step, run it!
+$ ./run.sh

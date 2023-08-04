@@ -1,0 +1,19 @@
+{
+    "DeviceType": "DeviceMultiplexer",
+    "Description": "A external multiplexer for eddy current signals.",
+    "Version": 0,
+    "CompatibilityVersion": 0,
+    "Raw":
+        [
+            {"Field": "MuxDescription", "Type": "char[16]", "Source": "Library", "Description": "Unimux"},
+            {"Field": "ConnectorType", "Type": "char[16]", "Source": "Library", "Description": "DSUB, ..."},
+            {"Field": "RecAInput", "Type": "eInputType", "Source": "Library", "Description": ""},
+            {"Field": "RecBInput", "Type": "eInputType", "Source": "Library", "Description": ""},
+            {"Field": "RecAOutput", "Type": "eOutputType", "Source": "Library", "Description": ""},
+            {"Field": "RecBOutput", "Type": "eOutputType", "Source": "Library", "Description": ""},
+            {"Field": "DrvMaxCurrent", "Type": "uint16", "Source": "Library", "ScalingFactor": 0.001, "Description": "Max Driver Amps in mA"},
+            {"Field": "DrvVoltage", "Type": "uint16", "Source": "Library", "ScalingFactor": 0.001, "Description": "Max Driver Voltage. This is delivered when the driver input is set to +-10V. Full Amplitude in mV"},
+            {"Field": "NumInputs", "Type": "uint8", "Source": "Library", "Description": "Number of Inputs"},
+            {"Field": "Encoder", "Type": "eEncoderType", "Source": "Library", "Description": ""}
+        ]
+}

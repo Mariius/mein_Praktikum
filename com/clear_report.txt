@@ -1,0 +1,5 @@
+
+
+read command received
+reading menory...
+Enter the position: 0

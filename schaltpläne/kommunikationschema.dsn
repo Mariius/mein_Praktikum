@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--This file was written by TinyCAD 3.00.04 develop
+If you wish to view this file go to https://www.tinycad.net to
+download the executable.-->
+<TinyCADSheets>
+	<TinyCAD>
+		<NAME>Sheet 1</NAME>
+		<DETAILS>
+			<Size width='1485' height='1050'/>
+			<GUIDES horiz='7' vert='5'/>
+			<TITLE></TITLE>
+			<AUTHOR></AUTHOR>
+			<REVISION>1.0</REVISION>
+			<DOCNUMBER></DOCNUMBER>
+			<ORGANISATION></ORGANISATION>
+			<SHEETS>1 of 1</SHEETS>
+			<SHOWS>1</SHOWS>
+			<DATE></DATE>
+			<GRID spacing='100.00000' snap='1'/>
+		</DETAILS>
+		<FONT id='3'>
+			<HEIGHT>-21</HEIGHT>
+			<WIDTH>10</WIDTH>
+			<WEIGHT>700</WEIGHT>
+			<ITALIC>0</ITALIC>
+			<UNDERLINE>0</UNDERLINE>
+			<STRIKEOUT>0</STRIKEOUT>
+			<CHARSET>0</CHARSET>
+			<FACENAME>Arial</FACENAME>
+		</FONT>
+		<FONT id='4'>
+			<HEIGHT>-35</HEIGHT>
+			<WIDTH>17</WIDTH>
+			<WEIGHT>700</WEIGHT>
+			<ITALIC>0</ITALIC>
+			<UNDERLINE>0</UNDERLINE>
+			<STRIKEOUT>0</STRIKEOUT>
+			<CHARSET>0</CHARSET>
+			<FACENAME>Arial</FACENAME>
+		</FONT>
+		<FONT id='5'>
+			<HEIGHT>-21</HEIGHT>
+			<WIDTH>10</WIDTH>
+			<WEIGHT>700</WEIGHT>
+			<ITALIC>0</ITALIC>
+			<UNDERLINE>0</UNDERLINE>
+			<STRIKEOUT>0</STRIKEOUT>
+			<CHARSET>0</CHARSET>
+			<FACENAME>Arial</FACENAME>
+		</FONT>
+		<STYLE id='2'>
+			<STYLE>0</STYLE>
+			<COLOR>000000</COLOR>
+			<THICKNESS>1</THICKNESS>
+		</STYLE>
+		<FILL id='0'>
+			<INDEX>-1</INDEX>
+			<COLOR>000000</COLOR>
+		</FILL>
+		<OPTIONS>
+			<GRID>0</GRID>
+			<UNITS>0</UNITS>
+			<COLOR_WIRE>FF0000</COLOR_WIRE>
+			<COLOR_BUS>0000FF</COLOR_BUS>
+			<COLOR_JUNCTION>000000</COLOR_JUNCTION>
+			<COLOR_NOCONNECT>000000</COLOR_NOCONNECT>
+			<COLOR_LABEL>208000</COLOR_LABEL>
+			<COLOR_POWER>000000</COLOR_POWER>
+			<COLOR_PIN>4040C0</COLOR_PIN>
+			<COLOR_HIDDEN_PIN>208020</COLOR_HIDDEN_PIN>
+			<COLOR_BACKGROUND>FFFFFF</COLOR_BACKGROUND>
+			<COLOR_NOTETEXT_FILL>AFFFFF</COLOR_NOTETEXT_FILL>
+			<COLOR_NOTETEXT_LINE>FF0000</COLOR_NOTETEXT_LINE>
+			<COLOR_NOTETEXT_TEXT>FF0000</COLOR_NOTETEXT_TEXT>
+		</OPTIONS>
+		<RECTANGLE a='18.00000,44.00000' b='102.00000,126.00000' style='2' fill='0'/>
+		<TEXT pos='42.00000,42.00000' direction='3' font='3' color='000000'>Raspberry PI</TEXT>
+		<RECTANGLE a='20.00000,48.00000' b='42.00000,86.00000' style='2' fill='0'/>
+		<RECTANGLE a='58.00000,50.00000' b='98.00000,86.00000' style='2' fill='0'/>
+		<RECTANGLE a='28.00000,92.00000' b='92.00000,122.00000' style='2' fill='0'/>
+		<TEXT pos='24.00000,68.00000' direction='3' font='3' color='000000'>Python</TEXT>
+		<TEXT pos='64.00000,68.00000' direction='3' font='3' color='000000'>Arduino CLI</TEXT>
+		<TEXT pos='42.00000,108.00000' direction='3' font='3' color='000000'>One-Wire-Tool (Pyton)</TEXT>
+		<TEXT pos='24.00000,76.00000' direction='3' font='3' color='000000'>(runIno)</TEXT>
+		<RECTANGLE a='160.00000,44.00000' b='226.00000,82.00000' style='2' fill='0'/>
+		<TEXT pos='180.00000,42.00000' direction='3' font='3' color='000000'>ArduinoNano</TEXT>
+		<RECTANGLE a='166.00000,50.00000' b='186.00000,74.00000' style='2' fill='0'/>
+		<RECTANGLE a='196.00000,50.00000' b='220.00000,74.00000' style='2' fill='0'/>
+		<RECTANGLE a='160.00000,92.00000' b='228.00000,124.00000' style='2' fill='0'/>
+		<TEXT pos='176.00000,104.00000' direction='3' font='3' color='000000'>OneWireAdapter</TEXT>
+		<BUS style='2' a='226.00000,60.00000' b='262.00000,60.00000'/>
+		<BUS style='2' a='262.00000,60.00000' b='262.00000,104.00000'/>
+		<BUS style='2' a='262.00000,104.00000' b='228.00000,104.00000'/>
+		<BUS style='2' a='98.00000,66.00000' b='160.00000,66.00000'/>
+		<BUS style='2' a='92.00000,108.00000' b='160.00000,108.00000'/>
+		<BUS style='2' a='38.00000,62.00000' b='60.00000,62.00000'/>
+		<POLYGON pos='58.00000,60.00000' style='2' fill='0' polygon='0'>
+			<POINT pos='0.00000,0.00000' arc='0'/>
+			<POINT pos='2.00000,2.00000' arc='0'/>
+			<POINT pos='0.00000,4.00000' arc='0'/>
+		</POLYGON>
+		<POLYGON pos='38.00000,60.00000' style='2' fill='0' polygon='0'>
+			<POINT pos='2.00000,0.00000' arc='0'/>
+			<POINT pos='0.00000,2.00000' arc='0'/>
+			<POINT pos='2.00000,4.00000' arc='0'/>
+		</POLYGON>
+		<TEXT pos='168.00000,64.00000' direction='3' font='3' color='000000'>Speicher</TEXT>
+		<TEXT pos='204.00000,64.00000' direction='3' font='3' color='000000'>PIOs</TEXT>
+		<TEXT pos='88.00000,22.00000' direction='3' font='4' color='000000'>Kommunikationsschema</TEXT>
+		<TEXT pos='238.00000,60.00000' direction='3' font='5' color='000000'>one-Wire</TEXT>
+		<TEXT pos='118.00000,66.00000' direction='3' font='5' color='000000'>USB-Seial</TEXT>
+		<TEXT pos='120.00000,108.00000' direction='3' font='5' color='000000'>USB-Serial</TEXT>
+		<POLYGON pos='154.00000,64.00000' style='2' fill='0' polygon='0'>
+			<POINT pos='0.00000,0.00000' arc='0'/>
+			<POINT pos='4.00000,2.00000' arc='0'/>
+			<POINT pos='0.00000,4.00000' arc='0'/>
+		</POLYGON>
+		<POLYGON pos='154.00000,106.00000' style='2' fill='0' polygon='0'>
+			<POINT pos='0.00000,0.00000' arc='0'/>
+			<POINT pos='4.00000,2.00000' arc='0'/>
+			<POINT pos='0.00000,4.00000' arc='0'/>
+		</POLYGON>
+		<POLYGON pos='230.00000,58.00000' style='2' fill='0' polygon='0'>
+			<POINT pos='4.00000,4.00000' arc='0'/>
+			<POINT pos='0.00000,2.00000' arc='0'/>
+			<POINT pos='4.00000,0.00000' arc='0'/>
+		</POLYGON>
+	</TinyCAD>
+</TinyCADSheets>

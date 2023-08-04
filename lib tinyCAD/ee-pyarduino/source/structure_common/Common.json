@@ -1,0 +1,20 @@
+{
+    "DeviceType": "Common",
+    "Description": "common section of all device types.",
+    "CompatibilityVersion": 0,
+    "Version": 0,
+    "Raw":
+        [
+            {"Field": "Signature", "Type": "uint8[16]", "Source": "Generator", "Description": "Digital Signature, see below"},
+            {"Field": "SerialNumber", "Type": "char[8]", "Source": "Generator", "Description": "Rohmann Serial Number, e.g. A00AVX, padded with trailing 0x00"},
+            {"Field": "OrderCode", "Type": "char[16]", "Source": "Library", "Description": "Rohmann Order Code, padded with trailing 0x00"},
+            {"Field": "DeviceType", "Type": "eDeviceType", "Source": "Library", "Description": "Device Type identifier, see sections below"},
+            {"Field": "BusInterfaces", "Type": "fBusType", "Source": "Library", "Description": "Flags, which other busses can be used"},
+            {"Field": "InputMask", "Type": "uint8", "Source": "Library", "Description": "1 for PIOs which are used as inputs"},
+            {"Field": "OutputMask", "Type": "uint8", "Source": "Library", "Description": "1 for PIOs which are used as outputs"},
+            {"Field": "VendorId", "Type": "eVendorId", "Source": "Generator", "Description": "Device Vendor Id"},
+            {"Field": "PayloadVersion", "Type": "uint8", "Source": "Generator", "Description": "Payload Data Version (device specific)"},
+            {"Field": "CompatibilityVersion", "Type": "uint8", "Source": "Generator", "Description": "Backward compatibility of the Payload format"},
+            {"Field": "PayloadLength", "Type": "uint8", "Source": "Generator", "Description": "Length of payload in multiples of 32 bit"}
+        ]
+}

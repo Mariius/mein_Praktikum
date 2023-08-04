@@ -1,0 +1,50 @@
+# this workflow run a test (test.runIno.py) of all functions of runIno 
+
+name: test runino
+
+on:
+  # Triggers the workflow on push events
+  push:
+      branches:
+        - main
+
+jobs:
+  test-functions:
+    name: test all functions of runIno
+
+    # The type of runner that the job will run on: a local runner, raspberry pi
+    runs-on: [self-hosted, r-prak1]
+
+    # sequence of tasks that will be executed as part of the job
+ 
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v3
+      
+      # create and init virtual environment for python and print infos
+      - name: virtual environment
+        run: |
+          python3 -m venv ~/env
+          source ~/env/bin/activate
+          cat /etc/os-release
+          python3 --version
+          pip3 list
+
+      - name: install dependencies 
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      
+      - name: run test
+        run: |
+          python3 test_runIno.py
+
+        # Clean-up and remove virtual environment
+      - name: Clean-up virtual environment
+        if: ${{ always() }}
+        run: |
+          python3 -m venv ~/env --clear
+          rm -rf ~/env
+
+
